@@ -1,16 +1,13 @@
-# faker_app_flutter_firebase
+# Flutter & Firebase Crash Course
 
-A new Flutter project.
+Demo project for my Flutter & Firebase Crash Course.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+To follow along with the crash course, clone this repo first:
 
-A few resources to get you started if this is your first Flutter project:
+```
+git clone https://github.com/bizz84/faker_app_flutter_firebase
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### [LICENSE: MIT](LICENSE.md)
