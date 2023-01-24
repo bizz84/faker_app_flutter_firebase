@@ -2,8 +2,7 @@ import 'package:faker_app_flutter_firebase/src/routing/app_router.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-Future<void> main() async {
-  WidgetsFlutterBinding.ensureInitialized();
+void main() {
   runApp(const ProviderScope(child: MyApp()));
 }
 

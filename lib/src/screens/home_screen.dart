@@ -9,7 +9,7 @@ class HomeScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
-      appBar: AppBar(title: const Text('My CV'), actions: [
+      appBar: AppBar(title: const Text('My Jobs'), actions: [
         IconButton(
           icon: const Icon(Icons.person),
           onPressed: () => context.goNamed(AppRoute.profile.name),
