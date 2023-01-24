@@ -1,7 +1,6 @@
 import 'package:faker_app_flutter_firebase/src/screens/custom_profile_screen.dart';
 import 'package:faker_app_flutter_firebase/src/screens/custom_sign_in_screen.dart';
 import 'package:faker_app_flutter_firebase/src/screens/home_screen.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
@@ -19,27 +18,17 @@ final goRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/sign-in',
         name: AppRoute.signIn.name,
-        pageBuilder: (context, state) => MaterialPage(
-          key: state.pageKey,
-          child: const CustomSignInScreen(),
-        ),
+        builder: (context, state) => const CustomSignInScreen(),
       ),
       GoRoute(
         path: '/home',
         name: AppRoute.home.name,
-        pageBuilder: (context, state) => MaterialPage(
-          key: state.pageKey,
-          child: const HomeScreen(),
-        ),
+        builder: (context, state) => const HomeScreen(),
         routes: [
           GoRoute(
             path: 'profile',
             name: AppRoute.profile.name,
-            pageBuilder: (context, state) => MaterialPage(
-              key: state.pageKey,
-              fullscreenDialog: true,
-              child: const CustomProfileScreen(),
-            ),
+            builder: (context, state) => const CustomProfileScreen(),
           ),
         ],
       ),
