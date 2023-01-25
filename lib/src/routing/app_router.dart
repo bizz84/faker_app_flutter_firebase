@@ -1,12 +1,10 @@
 import 'package:faker_app_flutter_firebase/src/screens/custom_profile_screen.dart';
 import 'package:faker_app_flutter_firebase/src/screens/custom_sign_in_screen.dart';
-import 'package:faker_app_flutter_firebase/src/screens/home_screen.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 enum AppRoute {
   signIn,
-  home,
   profile,
 }
 
@@ -21,16 +19,9 @@ final goRouterProvider = Provider<GoRouter>((ref) {
         builder: (context, state) => const CustomSignInScreen(),
       ),
       GoRoute(
-        path: '/home',
-        name: AppRoute.home.name,
-        builder: (context, state) => const HomeScreen(),
-        routes: [
-          GoRoute(
-            path: 'profile',
-            name: AppRoute.profile.name,
-            builder: (context, state) => const CustomProfileScreen(),
-          ),
-        ],
+        path: 'profile',
+        name: AppRoute.profile.name,
+        builder: (context, state) => const CustomProfileScreen(),
       ),
     ],
   );
