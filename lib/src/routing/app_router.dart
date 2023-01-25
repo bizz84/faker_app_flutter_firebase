@@ -19,7 +19,7 @@ final goRouterProvider = Provider<GoRouter>((ref) {
         builder: (context, state) => const CustomSignInScreen(),
       ),
       GoRoute(
-        path: 'profile',
+        path: '/profile',
         name: AppRoute.profile.name,
         builder: (context, state) => const CustomProfileScreen(),
       ),
