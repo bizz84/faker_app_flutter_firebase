@@ -15,6 +15,12 @@ class HomeScreen extends ConsumerWidget {
           onPressed: () => context.goNamed(AppRoute.profile.name),
         )
       ]),
+      floatingActionButton: FloatingActionButton(
+        child: const Icon(Icons.add),
+        onPressed: () {
+          debugPrint('Not implemented');
+        },
+      ),
     );
   }
 }
