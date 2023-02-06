@@ -13,6 +13,7 @@ dependencies:
   flutter_riverpod: 2.1.3
   go_router: 6.0.1
   equatable: 2.0.5
+  firebase_core: ^2.4.1
 
 dev_dependencies:
   flutter_test:
