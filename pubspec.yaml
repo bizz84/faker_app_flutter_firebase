@@ -18,6 +18,7 @@ dependencies:
   firebase_ui_auth: 1.4.1
   cloud_firestore: 4.7.1
   faker: 2.1.0
+  firebase_ui_firestore: 1.5.1
 
 dev_dependencies:
   flutter_test:
