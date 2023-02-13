@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:faker/faker.dart';
+import 'package:faker/faker.dart' hide Job;
 import 'package:faker_app_flutter_firebase/src/data/firestore_repository.dart';
+import 'package:faker_app_flutter_firebase/src/data/job.dart';
 import 'package:faker_app_flutter_firebase/src/routing/app_router.dart';
 import 'package:firebase_ui_firestore/firebase_ui_firestore.dart';
 import 'package:flutter/material.dart';
@@ -44,13 +45,13 @@ class JobsListView extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final firestoreRepository = ref.watch(firestoreRepositoryProvider);
-    return FirestoreListView(
+    return FirestoreListView<Job>(
       query: firestoreRepository.jobsQuery(),
-      itemBuilder: (BuildContext context,
-          QueryDocumentSnapshot<Map<String, dynamic>> doc) {
+      itemBuilder: (BuildContext context, QueryDocumentSnapshot<Job> doc) {
+        final job = doc.data();
         return ListTile(
-          title: Text(doc['title']),
-          subtitle: Text(doc['company']),
+          title: Text(job.title),
+          subtitle: Text(job.company),
         );
       },
     );
