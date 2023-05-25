@@ -1,4 +1,9 @@
 PODS:
+  - cloud_firestore (4.9.0):
+    - Firebase/Firestore (= 10.12.0)
+    - firebase_core
+    - Flutter
+    - nanopb (< 2.30910.0, >= 2.30908.0)
   - desktop_webview_auth (0.0.1):
     - Flutter
   - Firebase/Auth (10.12.0):
@@ -9,6 +14,9 @@ PODS:
   - Firebase/DynamicLinks (10.12.0):
     - Firebase/CoreOnly
     - FirebaseDynamicLinks (~> 10.12.0)
+  - Firebase/Firestore (10.12.0):
+    - Firebase/CoreOnly
+    - FirebaseFirestore (~> 10.12.0)
   - firebase_auth (4.8.0):
     - Firebase/Auth (= 10.12.0)
     - firebase_core
@@ -35,6 +43,14 @@ PODS:
     - "GoogleUtilities/NSData+zlib (~> 7.8)"
   - FirebaseDynamicLinks (10.12.0):
     - FirebaseCore (~> 10.0)
+  - FirebaseFirestore (10.12.0):
+    - FirebaseFirestore/AutodetectLeveldb (= 10.12.0)
+  - FirebaseFirestore/AutodetectLeveldb (10.12.0):
+    - FirebaseFirestore/Base
+    - FirebaseFirestore/WithLeveldb
+  - FirebaseFirestore/Base (10.12.0)
+  - FirebaseFirestore/WithLeveldb (10.12.0):
+    - FirebaseFirestore/Base
   - Flutter (1.0.0)
   - GoogleUtilities/AppDelegateSwizzler (7.11.1):
     - GoogleUtilities/Environment
@@ -52,13 +68,20 @@ PODS:
   - GoogleUtilities/Reachability (7.11.1):
     - GoogleUtilities/Logger
   - GTMSessionFetcher/Core (3.1.1)
+  - nanopb (2.30909.0):
+    - nanopb/decode (= 2.30909.0)
+    - nanopb/encode (= 2.30909.0)
+  - nanopb/decode (2.30909.0)
+  - nanopb/encode (2.30909.0)
   - PromisesObjC (2.2.0)
 
 DEPENDENCIES:
+  - cloud_firestore (from `.symlinks/plugins/cloud_firestore/ios`)
   - desktop_webview_auth (from `.symlinks/plugins/desktop_webview_auth/ios`)
   - firebase_auth (from `.symlinks/plugins/firebase_auth/ios`)
   - firebase_core (from `.symlinks/plugins/firebase_core/ios`)
   - firebase_dynamic_links (from `.symlinks/plugins/firebase_dynamic_links/ios`)
+  - FirebaseFirestore (from `https://github.com/invertase/firestore-ios-sdk-frameworks.git`, tag `10.12.0`)
   - Flutter (from `Flutter`)
 
 SPEC REPOS:
@@ -71,9 +94,12 @@ SPEC REPOS:
     - FirebaseDynamicLinks
     - GoogleUtilities
     - GTMSessionFetcher
+    - nanopb
     - PromisesObjC
 
 EXTERNAL SOURCES:
+  cloud_firestore:
+    :path: ".symlinks/plugins/cloud_firestore/ios"
   desktop_webview_auth:
     :path: ".symlinks/plugins/desktop_webview_auth/ios"
   firebase_auth:
@@ -82,10 +108,19 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/firebase_core/ios"
   firebase_dynamic_links:
     :path: ".symlinks/plugins/firebase_dynamic_links/ios"
+  FirebaseFirestore:
+    :git: https://github.com/invertase/firestore-ios-sdk-frameworks.git
+    :tag: 10.12.0
   Flutter:
     :path: Flutter
 
+CHECKOUT OPTIONS:
+  FirebaseFirestore:
+    :git: https://github.com/invertase/firestore-ios-sdk-frameworks.git
+    :tag: 10.12.0
+
 SPEC CHECKSUMS:
+  cloud_firestore: 2d219f5d2eec836c5525699e777f907c9d3cd3eb
   desktop_webview_auth: d645139460ef203d50bd0cdb33356785dd939cce
   Firebase: 07150e75d142fb9399f6777fa56a187b17f833a0
   firebase_auth: 604e47908bc2dcd7baa113bbd37ab74000bff488
@@ -96,11 +131,13 @@ SPEC CHECKSUMS:
   FirebaseCore: f86a1394906b97ac445ae49c92552a9425831bed
   FirebaseCoreInternal: 950500ad8a08963657f6d8c67b579740c06d6aa1
   FirebaseDynamicLinks: 1a387da899779e5ef34f4d6f8bdba882f90d0e67
+  FirebaseFirestore: 5d42819d1b219bc20e91c0cc854ed562680f31da
   Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
   GoogleUtilities: 9aa0ad5a7bc171f8bae016300bfcfa3fb8425749
   GTMSessionFetcher: e8647203b65cee28c5f73d0f473d096653945e72
+  nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
   PromisesObjC: 09985d6d70fbe7878040aa746d78236e6946d2ef
 
-PODFILE CHECKSUM: ef19549a9bc3046e7bb7d2fab4d021637c0c58a3
+PODFILE CHECKSUM: 73f8488288d261b15f4151992c7a0cdb33ad1d63
 
 COCOAPODS: 1.11.3
