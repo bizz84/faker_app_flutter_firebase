@@ -9,6 +9,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 Future<void> setupEmulators() async {
   await FirebaseAuth.instance.useAuthEmulator('127.0.0.1', 9099);
   FirebaseFirestore.instance.useFirestoreEmulator('127.0.0.1', 8080);
+  // TODO: uncomment to use the Functions emulator
+  // FirebaseFunctions.instance.useFunctionsEmulator('127.0.0.1', 5001);
 }
 
 void main() async {
