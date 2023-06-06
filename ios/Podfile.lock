@@ -3,6 +3,10 @@ PODS:
     - Firebase/Firestore (= 11.10.0)
     - firebase_core
     - Flutter
+  - cloud_functions (5.4.0):
+    - Firebase/Functions (= 11.10.0)
+    - firebase_core
+    - Flutter
   - desktop_webview_auth (0.0.1):
     - Flutter
   - Firebase/Auth (11.10.0):
@@ -16,6 +20,9 @@ PODS:
   - Firebase/Firestore (11.10.0):
     - Firebase/CoreOnly
     - FirebaseFirestore (~> 11.10.0)
+  - Firebase/Functions (11.10.0):
+    - Firebase/CoreOnly
+    - FirebaseFunctions (~> 11.10.0)
   - firebase_auth (5.5.2):
     - Firebase/Auth (= 11.10.0)
     - firebase_core
@@ -69,6 +76,15 @@ PODS:
     - FirebaseFirestoreGRPCCPPBinary (= 1.69.0)
     - leveldb-library (~> 1.22)
     - nanopb (~> 3.30910.0)
+  - FirebaseFunctions (11.10.0):
+    - FirebaseAppCheckInterop (~> 11.0)
+    - FirebaseAuthInterop (~> 11.0)
+    - FirebaseCore (~> 11.10.0)
+    - FirebaseCoreExtension (~> 11.10.0)
+    - FirebaseMessagingInterop (~> 11.0)
+    - FirebaseSharedSwift (~> 11.0)
+    - GTMSessionFetcher/Core (< 5.0, >= 3.4)
+  - FirebaseMessagingInterop (11.11.0)
   - FirebaseSharedSwift (11.10.0)
   - Flutter (1.0.0)
   - GoogleUtilities/AppDelegateSwizzler (8.0.2):
@@ -103,6 +119,7 @@ PODS:
 
 DEPENDENCIES:
   - cloud_firestore (from `.symlinks/plugins/cloud_firestore/ios`)
+  - cloud_functions (from `.symlinks/plugins/cloud_functions/ios`)
   - desktop_webview_auth (from `.symlinks/plugins/desktop_webview_auth/ios`)
   - firebase_auth (from `.symlinks/plugins/firebase_auth/ios`)
   - firebase_core (from `.symlinks/plugins/firebase_core/ios`)
@@ -126,6 +143,8 @@ SPEC REPOS:
     - FirebaseFirestoreGRPCCoreBinary
     - FirebaseFirestoreGRPCCPPBinary
     - FirebaseFirestoreInternalBinary
+    - FirebaseFunctions
+    - FirebaseMessagingInterop
     - FirebaseSharedSwift
     - GoogleUtilities
     - GTMSessionFetcher
@@ -136,6 +155,8 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   cloud_firestore:
     :path: ".symlinks/plugins/cloud_firestore/ios"
+  cloud_functions:
+    :path: ".symlinks/plugins/cloud_functions/ios"
   desktop_webview_auth:
     :path: ".symlinks/plugins/desktop_webview_auth/ios"
   firebase_auth:
@@ -157,6 +178,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   cloud_firestore: 07742f115155e19201e77b4cafb155011892d7b7
+  cloud_functions: c8b74a1a9c96de6569ee9aca189a75b1c986f3fa
   desktop_webview_auth: 4cf620136c3d79796496eef85e59508e3a1a003d
   Firebase: 1fe1c0a7d9aaea32efe01fbea5f0ebd8d70e53a2
   firebase_auth: 34c515a8fa76a4ef678ac5ad5cfa3bb3120f5ab5
@@ -176,6 +198,8 @@ SPEC CHECKSUMS:
   FirebaseFirestoreGRPCCoreBinary: 565534e160a0415d12185f7f171c52a567382fbd
   FirebaseFirestoreGRPCCPPBinary: 6c0134e8d230ee58b9d51dec2a30a48efd6d5dc7
   FirebaseFirestoreInternalBinary: 96b309279c4efdf00b83ab80e8af4d0a73d30258
+  FirebaseFunctions: e89e0cf2091c9fb19aa58df270317c0a91963f4f
+  FirebaseMessagingInterop: 87d4a0a3a78644576c681974ce895599f9a867c9
   FirebaseSharedSwift: 1baacae75939499b5def867cbe34129464536a38
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
   GoogleUtilities: 26a3abef001b6533cf678d3eb38fd3f614b7872d
