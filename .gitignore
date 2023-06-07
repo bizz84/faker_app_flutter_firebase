@@ -46,6 +46,9 @@ app.*.map.json
 # Firebase CLI config
 .firebaserc
 
+# Ignore the Firebase emulator seed folder used in the course
+seed/
+
 # Firebase config files
 lib/firebase_options.dart
 ios/Runner/GoogleService-Info.plist
