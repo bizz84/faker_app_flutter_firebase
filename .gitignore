@@ -43,6 +43,9 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
+# Firebase CLI config
+.firebaserc
+
 # Firebase config files
 lib/firebase_options.dart
 ios/Runner/GoogleService-Info.plist
