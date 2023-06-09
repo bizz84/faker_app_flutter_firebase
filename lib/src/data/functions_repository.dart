@@ -1,4 +1,5 @@
 import 'package:cloud_functions/cloud_functions.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class FunctionsRepository {
@@ -6,7 +7,9 @@ class FunctionsRepository {
   final FirebaseFunctions _functions;
 
   Future<void> deleteAllUserJobs() async {
-    // TODO: Implement
+    final callable = _functions.httpsCallable('deleteAllUserJobs');
+    final result = await callable();
+    debugPrint(result.data.toString());
   }
 }
 

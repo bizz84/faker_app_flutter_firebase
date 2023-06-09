@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:cloud_functions/cloud_functions.dart';
 import 'package:faker/faker.dart' hide Job;
 import 'package:faker_app_flutter_firebase/src/common_widgets/alert_dialogs.dart';
 import 'package:faker_app_flutter_firebase/src/data/firestore_repository.dart';
@@ -23,11 +24,13 @@ class HomeScreen extends ConsumerWidget {
             try {
               await ref.read(functionsRepositoryProvider).deleteAllUserJobs();
             } catch (e) {
-              showAlertDialog(
-                context: context,
-                title: 'An error occurred',
-                content: e.toString(),
-              );
+              if (e is FirebaseFunctionsException) {
+                showAlertDialog(
+                  context: context,
+                  title: 'An error occurred',
+                  content: e.message,
+                );
+              }
             }
           },
         ),
