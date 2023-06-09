@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:cloud_functions/cloud_functions.dart';
 import 'package:faker_app_flutter_firebase/firebase_options.dart';
 import 'package:faker_app_flutter_firebase/src/routing/app_router.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -9,8 +10,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 Future<void> setupEmulators() async {
   await FirebaseAuth.instance.useAuthEmulator('127.0.0.1', 9099);
   FirebaseFirestore.instance.useFirestoreEmulator('127.0.0.1', 8080);
-  // TODO: uncomment to use the Functions emulator
-  // FirebaseFunctions.instance.useFunctionsEmulator('127.0.0.1', 5001);
+  FirebaseFunctions.instance.useFunctionsEmulator('127.0.0.1', 5001);
 }
 
 void main() async {
