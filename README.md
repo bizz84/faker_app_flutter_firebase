@@ -8,6 +8,8 @@ To follow along with the crash course, get the starter project by cloning this r
 
 ```
 git clone https://github.com/bizz84/faker_app_flutter_firebase
+cd faker_app_flutter_firebase
+git checkout starter-project
 ```
 
 ### [LICENSE: MIT](LICENSE.md)
