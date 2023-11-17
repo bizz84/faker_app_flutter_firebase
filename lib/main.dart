@@ -16,7 +16,10 @@ class MyApp extends ConsumerWidget {
     return MaterialApp.router(
       routerConfig: goRouter,
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.indigo),
+      theme: ThemeData(
+        useMaterial3: false,
+        primarySwatch: Colors.indigo,
+      ),
     );
   }
 }
