@@ -44,8 +44,9 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
-# Firebase CLI config
+# Firebase config
 .firebaserc
+firebase.json
 
 # Firebase config files
 lib/firebase_options.dart
