@@ -14,6 +14,8 @@ dependencies:
   go_router: 15.0.0
   equatable: 2.0.7
   firebase_core: 3.13.0
+  firebase_auth: 5.5.2
+  firebase_ui_auth: 1.16.1
 
 dev_dependencies:
   flutter_test:
@@ -22,3 +24,8 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+fonts:
+  - family: SocialIcons
+    fonts:
+      - asset: packages/firebase_ui_auth/fonts/SocialIcons.ttf
