@@ -1,0 +1,50 @@
+PODS:
+  - Firebase/CoreOnly (11.4.2):
+    - FirebaseCore (= 11.4.2)
+  - firebase_core (3.8.0):
+    - Firebase/CoreOnly (~> 11.4.0)
+    - FlutterMacOS
+  - FirebaseCore (11.4.2):
+    - FirebaseCoreInternal (< 12.0, >= 11.4.2)
+    - GoogleUtilities/Environment (~> 8.0)
+    - GoogleUtilities/Logger (~> 8.0)
+  - FirebaseCoreInternal (11.5.0):
+    - "GoogleUtilities/NSData+zlib (~> 8.0)"
+  - FlutterMacOS (1.0.0)
+  - GoogleUtilities/Environment (8.0.2):
+    - GoogleUtilities/Privacy
+  - GoogleUtilities/Logger (8.0.2):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Privacy
+  - "GoogleUtilities/NSData+zlib (8.0.2)":
+    - GoogleUtilities/Privacy
+  - GoogleUtilities/Privacy (8.0.2)
+
+DEPENDENCIES:
+  - firebase_core (from `Flutter/ephemeral/.symlinks/plugins/firebase_core/macos`)
+  - FlutterMacOS (from `Flutter/ephemeral`)
+
+SPEC REPOS:
+  trunk:
+    - Firebase
+    - FirebaseCore
+    - FirebaseCoreInternal
+    - GoogleUtilities
+
+EXTERNAL SOURCES:
+  firebase_core:
+    :path: Flutter/ephemeral/.symlinks/plugins/firebase_core/macos
+  FlutterMacOS:
+    :path: Flutter/ephemeral
+
+SPEC CHECKSUMS:
+  Firebase: 7fd5466678d964be78fbf536d8a3385da19c4828
+  firebase_core: d95c4a2225d7b6ed46bc31fb2a6f421fc7c8285b
+  FirebaseCore: 6b32c57269bd999aab34354c3923d92a6e5f3f84
+  FirebaseCoreInternal: f47dd28ae7782e6a4738aad3106071a8fe0af604
+  FlutterMacOS: 8f6f14fa908a6fb3fba0cd85dbd81ec4b251fb24
+  GoogleUtilities: 26a3abef001b6533cf678d3eb38fd3f614b7872d
+
+PODFILE CHECKSUM: f0c21717cb7ee9112f915044c74bfceb5b12e02a
+
+COCOAPODS: 1.16.2

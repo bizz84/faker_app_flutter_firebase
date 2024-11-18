@@ -1,0 +1,50 @@
+PODS:
+  - Firebase/CoreOnly (11.4.0):
+    - FirebaseCore (= 11.4.0)
+  - firebase_core (3.8.0):
+    - Firebase/CoreOnly (= 11.4.0)
+    - Flutter
+  - FirebaseCore (11.4.0):
+    - FirebaseCoreInternal (~> 11.0)
+    - GoogleUtilities/Environment (~> 8.0)
+    - GoogleUtilities/Logger (~> 8.0)
+  - FirebaseCoreInternal (11.5.0):
+    - "GoogleUtilities/NSData+zlib (~> 8.0)"
+  - Flutter (1.0.0)
+  - GoogleUtilities/Environment (8.0.2):
+    - GoogleUtilities/Privacy
+  - GoogleUtilities/Logger (8.0.2):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Privacy
+  - "GoogleUtilities/NSData+zlib (8.0.2)":
+    - GoogleUtilities/Privacy
+  - GoogleUtilities/Privacy (8.0.2)
+
+DEPENDENCIES:
+  - firebase_core (from `.symlinks/plugins/firebase_core/ios`)
+  - Flutter (from `Flutter`)
+
+SPEC REPOS:
+  trunk:
+    - Firebase
+    - FirebaseCore
+    - FirebaseCoreInternal
+    - GoogleUtilities
+
+EXTERNAL SOURCES:
+  firebase_core:
+    :path: ".symlinks/plugins/firebase_core/ios"
+  Flutter:
+    :path: Flutter
+
+SPEC CHECKSUMS:
+  Firebase: cf1b19f21410b029b6786a54e9764a0cacad3c99
+  firebase_core: 9efc3ecf689cdbc90f13f4dc58108c83ea46b266
+  FirebaseCore: e0510f1523bc0eb21653cac00792e1e2bd6f1771
+  FirebaseCoreInternal: f47dd28ae7782e6a4738aad3106071a8fe0af604
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  GoogleUtilities: 26a3abef001b6533cf678d3eb38fd3f614b7872d
+
+PODFILE CHECKSUM: a57f30d18f102dd3ce366b1d62a55ecbef2158e5
+
+COCOAPODS: 1.16.2
