@@ -19,6 +19,17 @@
     "firebase-functions": "^6.0.1"
   },
   "devDependencies": {
+    "@types/babel__generator": "^7.27.0",
+    "@types/babel__template": "^7.4.4",
+    "@types/body-parser": "^1.19.5",
+    "@types/caseless": "^0.12.5",
+    "@types/istanbul-lib-report": "^3.0.3",
+    "@types/qs": "^6.9.18",
+    "@types/range-parser": "^1.2.7",
+    "@types/send": "^0.17.4",
+    "@types/serve-static": "^1.15.7",
+    "@types/tough-cookie": "^4.0.5",
+    "@types/yargs-parser": "^21.0.3",
     "@typescript-eslint/eslint-plugin": "^5.12.0",
     "@typescript-eslint/parser": "^5.12.0",
     "eslint": "^8.9.0",
